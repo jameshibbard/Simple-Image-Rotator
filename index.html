@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Image Rotator</title>
+    <link rel="stylesheet" href="css/colorbox.css" />
+    <link rel="stylesheet" href="css/image-rotator.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <h1>Simple Image Rotator - Demo</h1>
+      <p>Click on an image to enlarge it and pause the rotation</p>
+      <ul class="rotator">
+        <li>
+          <a href="images/rotator/big/IMG_1.jpg">
+            <img src="images/rotator/small/IMG_1.jpg" class="colorbox-5" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/rotator/big/IMG_2.jpg">
+            <img src="images/rotator/small/IMG_2.jpg" class="colorbox-5" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/rotator/big/IMG_3.jpg">
+            <img src="images/rotator/small/IMG_3.jpg" class="colorbox-5" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/rotator/big/IMG_4.jpg">
+            <img src="images/rotator/small/IMG_4.jpg" class="colorbox-5" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/rotator/big/IMG_5.jpg">
+            <img src="images/rotator/small/IMG_5.jpg" class="colorbox-5" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/rotator/big/IMG_6.jpg">
+            <img src="images/rotator/small/IMG_6.jpg" class="colorbox-5" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="images/rotator/big/IMG_7.jpg">
+            <img src="images/rotator/small/IMG_7.jpg" class="colorbox-5" alt="" />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/simple-image-rotator.js"></script>
+    <script>
+      SimpleImageRotator.init();
+      $('.rotator a').colorbox();
+    </script>
+  </body>
+</html>
